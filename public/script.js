@@ -23,15 +23,30 @@ function gestionaLinks() {
 
 
 function carregaProductes() {
-    // TO-DO (Exercici 3)
+// TO-DO (Exercici 3)
     // Realitza una petició a l'endpoint /get-products del servidor, i genera el product-card corresponent per a cada producte.
+    fetch('/get-products')
+    .then(response => response.json())
+    .then(data => {
+        const productContainer = document.getElementById('productos');
+        if (productContainer) {
+            data.forEach(product => {
+                const productCard = document.createElement('product-card');
+                productCard.setAttribute('nombre', product.name);
+                productCard.setAttribute('precio', product.price);
+                productCard.setAttribute('imagen', product.image);
+                productCard.setAttribute('descripcion', product.description);
+                productContainer.appendChild(productCard);
+            });
+        } else {
+            console.error('No se encontraron los productos');
+        }
+    })
+    .catch(error => console.error('Error al cargar los productos:', error));
 
-    
 
 
-    
-
-    
+      
     // TO-DO (Exercici 4)
 
 }
