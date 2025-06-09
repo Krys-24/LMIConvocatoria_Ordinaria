@@ -8,4 +8,7 @@ Esto último con un if sencillo se puede hacer.
 Primero creamos el shadow DOM y seguidamente los atributos que tendrán los productos de la web. Después creamos el contenido html y registramos el web component. Todo esto en `product-card.js`
 
 ## Exercici 3. Càrrega de productes
-He modificado el `index.html` y el `script.js` para que se carguen los productos. 
+He modificado el `index.html` y el `script.js` para que se carguen los productos.
+
+## Exercici 4. Incorpora els productes al formulari
+He modificado el `script.js` para que el contenido del select se ponga dinámicamente
