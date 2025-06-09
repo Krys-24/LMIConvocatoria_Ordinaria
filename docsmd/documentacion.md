@@ -5,4 +5,7 @@ En el ejercicio 1 he modificado el archivo `script.js` para enseñar solo las se
 Esto último con un if sencillo se puede hacer.
 
 ## Exercici 2. Creació d'un webComponent per als productes
-Primero creamos el shadow DOM y seguidamente los atributos que tendrán los productos de la web. Después creamos el contenido html y registramos el web component
+Primero creamos el shadow DOM y seguidamente los atributos que tendrán los productos de la web. Después creamos el contenido html y registramos el web component. Todo esto en `product-card.js`
+
+## Exercici 3. Càrrega de productes
+He modificado el `index.html` y el `script.js` para que se carguen los productos. 
