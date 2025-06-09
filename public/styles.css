@@ -1,0 +1,161 @@
+/* Estils globals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estils del cos de la pàgina */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Capçalera */
+header {
+    background-color: #007b7f; /* Teal */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px; /* Ajusta la mida del logo */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Estils del contingut principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Estils de les pestanyes */
+section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Formulari de contacte */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, select{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #007b7f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004f4e;
+}
+
+/* Estils del peu de pàgina */
+footer {
+    text-align: center;
+    background-color: #007b7f;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estils per a una millor experiència en dispositius mòbils */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* Estils per a les targetes */
+
+#product-list {
+    display: grid; /* Activa el mode grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Disseny de les columnes */
+    gap: 20px; /* Espai entre les columnes i les files */
+    padding: 20px;
+    justify-items: center; /* Centra els elements dins de les cel·les de la graella */
+}
+
+/* Estils per a les cards del producte */
+product-card {
+    width: 100%; /* El Web Component ocupa tota l'amplada de la cel·la */
+}
