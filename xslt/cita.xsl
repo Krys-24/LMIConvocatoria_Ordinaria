@@ -39,6 +39,7 @@
                                 <fo:table-cell border="solid 1px black" padding="5pt">
                                     <fo:block>
                                         <!-- TO-DO 6c. Incorpora aci la ruta per accedir al nom del client -->
+                                        <xsl:value-of select="/cita/client/nom"/>
                                     </fo:block>
                                 </fo:table-cell>
                             </fo:table-row>
@@ -49,6 +50,7 @@
                                 <fo:table-cell border="solid 1px black" padding="5pt">
                                     <fo:block>
                                         <!-- TO-DO 6c. Incorpora aci la ruta per accedir al correu del client -->
+                                        <xsl:value-of select="/cita/client/email"/>
                                     </fo:block>
                                 </fo:table-cell>
                             </fo:table-row>
@@ -59,6 +61,7 @@
                                 <fo:table-cell border="solid 1px black" padding="5pt">
                                     <fo:block>
                                         <!-- TO-DO 6c. Incorpora aci la ruta per accedir al telèfon del client-->
+                                        <xsl:value-of select="/cita/client/telefon"/>
                                     </fo:block>
                                 </fo:table-cell>
                             </fo:table-row>
@@ -69,6 +72,7 @@
                                 <fo:table-cell border="solid 1px black" padding="5pt">
                                     <fo:block>
                                         <!-- TO-DO 6c. Incorpora aci la ruta per accedir al producte-->
+                                        <xsl:value-of select="/cita/producte"/>
                                     </fo:block>
                                 </fo:table-cell>
                             </fo:table-row>
@@ -80,6 +84,7 @@
                                 <fo:table-cell border="solid 1px black" padding="5pt">
                                     <fo:block>
                                         <!-- TO-DO 6c. Incorpora aci la ruta per accedir a la data -->
+                                        <xsl:value-of select="/cita/data"/>
                                     </fo:block>
                                 </fo:table-cell>
                             </fo:table-row>

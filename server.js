@@ -100,7 +100,13 @@ function generarXML(dades) {
     */
     return `
 <cita>
-  ...
+  <client>
+    <nom>${dades.nom}</nom>
+    <email>${dades.correu}</email>
+    <telefon>${dades.telefon}</telefon>
+  </client>
+  <producte>${dades.producte}</producte>
+  <data>${dades.data}</data>
 </cita>
     `;
 }
@@ -117,7 +123,7 @@ function transformarXSLT(xmlPath, foPath) {
         La plantilla la troareu en ./xslt/cita.xsl
 
         */
-        const cmd = ``;
+        const cmd = `xsltproc -o "${foPath.replace(/\\/g, '/')}" "${path.join(__dirname, 'xslt', 'cita.xsl').replace(/\\/g, '/')}" "${xmlPath.replace(/\\/g, '/')}"`;
 
         exec(cmd, (error, stdout, stderr) => {
             if (error) {
@@ -139,7 +145,7 @@ function generarPDF(foPath, pdfPath) {
 
         */
 
-        const cmd = ``;
+        const cmd = `fop "${foPath}" "${pdfPath}"`;
 
         exec(cmd, (error, stdout, stderr) => {
             if (error) {
