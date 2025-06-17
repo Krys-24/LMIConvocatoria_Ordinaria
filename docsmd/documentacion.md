@@ -12,3 +12,12 @@ He modificado el `index.html` y el `script.js` para que se carguen los productos
 
 ## Exercici 4. Incorpora els productes al formulari
 He modificado el `script.js` para que el contenido del select se ponga dinámicamente
+
+## Exercici 5. Enviament del formulari
+
+He completado la función `preparaFormulari()` para que se envie correctamente para su posterior conversión a pdf
+
+## Exercici 6. Processament de la informació del formulari i generació del pdf.
+
+He completado todas los TO-DO de `server.js` y `cita.xsl`, además de instalarme fop y xsltproc para su correcto funcionamiento
+
